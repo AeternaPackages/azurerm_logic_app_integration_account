@@ -1,4 +1,9 @@
 # --- azurerm_logic_app_integration_account ---
+output "logic_app_integration_accounts_id" {
+  description = "Map of id values across all logic_app_integration_accounts, keyed the same as var.logic_app_integration_accounts"
+  value       = module.logic_app_integration_accounts.logic_app_integration_accounts_id
+}
+
 output "logic_app_integration_accounts_integration_service_environment_id" {
   description = "Map of integration_service_environment_id values across all logic_app_integration_accounts, keyed the same as var.logic_app_integration_accounts"
   value       = module.logic_app_integration_accounts.logic_app_integration_accounts_integration_service_environment_id
@@ -30,6 +35,11 @@ output "logic_app_integration_accounts_tags" {
 }
 
 # --- azurerm_logic_app_integration_account_agreement ---
+output "logic_app_integration_account_agreements_id" {
+  description = "Map of id values across all logic_app_integration_account_agreements, keyed the same as var.logic_app_integration_account_agreements"
+  value       = module.logic_app_integration_account_agreements.logic_app_integration_account_agreements_id
+}
+
 output "logic_app_integration_account_agreements_agreement_type" {
   description = "Map of agreement_type values across all logic_app_integration_account_agreements, keyed the same as var.logic_app_integration_account_agreements"
   value       = module.logic_app_integration_account_agreements.logic_app_integration_account_agreements_agreement_type
@@ -81,6 +91,11 @@ output "logic_app_integration_account_agreements_resource_group_name" {
 }
 
 # --- azurerm_logic_app_integration_account_assembly ---
+output "logic_app_integration_account_assemblies_id" {
+  description = "Map of id values across all logic_app_integration_account_assemblies, keyed the same as var.logic_app_integration_account_assemblies"
+  value       = module.logic_app_integration_account_assemblies.logic_app_integration_account_assemblies_id
+}
+
 output "logic_app_integration_account_assemblies_assembly_name" {
   description = "Map of assembly_name values across all logic_app_integration_account_assemblies, keyed the same as var.logic_app_integration_account_assemblies"
   value       = module.logic_app_integration_account_assemblies.logic_app_integration_account_assemblies_assembly_name
@@ -122,6 +137,11 @@ output "logic_app_integration_account_assemblies_resource_group_name" {
 }
 
 # --- azurerm_logic_app_integration_account_batch_configuration ---
+output "logic_app_integration_account_batch_configurations_id" {
+  description = "Map of id values across all logic_app_integration_account_batch_configurations, keyed the same as var.logic_app_integration_account_batch_configurations"
+  value       = module.logic_app_integration_account_batch_configurations.logic_app_integration_account_batch_configurations_id
+}
+
 output "logic_app_integration_account_batch_configurations_batch_group_name" {
   description = "Map of batch_group_name values across all logic_app_integration_account_batch_configurations, keyed the same as var.logic_app_integration_account_batch_configurations"
   value       = module.logic_app_integration_account_batch_configurations.logic_app_integration_account_batch_configurations_batch_group_name
@@ -153,6 +173,11 @@ output "logic_app_integration_account_batch_configurations_resource_group_name" 
 }
 
 # --- azurerm_logic_app_integration_account_certificate ---
+output "logic_app_integration_account_certificates_id" {
+  description = "Map of id values across all logic_app_integration_account_certificates, keyed the same as var.logic_app_integration_account_certificates"
+  value       = module.logic_app_integration_account_certificates.logic_app_integration_account_certificates_id
+}
+
 output "logic_app_integration_account_certificates_integration_account_name" {
   description = "Map of integration_account_name values across all logic_app_integration_account_certificates, keyed the same as var.logic_app_integration_account_certificates"
   value       = module.logic_app_integration_account_certificates.logic_app_integration_account_certificates_integration_account_name
@@ -184,6 +209,11 @@ output "logic_app_integration_account_certificates_resource_group_name" {
 }
 
 # --- azurerm_logic_app_integration_account_map ---
+output "logic_app_integration_account_maps_id" {
+  description = "Map of id values across all logic_app_integration_account_maps, keyed the same as var.logic_app_integration_account_maps"
+  value       = module.logic_app_integration_account_maps.logic_app_integration_account_maps_id
+}
+
 output "logic_app_integration_account_maps_content" {
   description = "Map of content values across all logic_app_integration_account_maps, keyed the same as var.logic_app_integration_account_maps"
   value       = module.logic_app_integration_account_maps.logic_app_integration_account_maps_content
@@ -215,6 +245,11 @@ output "logic_app_integration_account_maps_resource_group_name" {
 }
 
 # --- azurerm_logic_app_integration_account_partner ---
+output "logic_app_integration_account_partners_id" {
+  description = "Map of id values across all logic_app_integration_account_partners, keyed the same as var.logic_app_integration_account_partners"
+  value       = module.logic_app_integration_account_partners.logic_app_integration_account_partners_id
+}
+
 output "logic_app_integration_account_partners_business_identity" {
   description = "Map of business_identity values across all logic_app_integration_account_partners, keyed the same as var.logic_app_integration_account_partners"
   value       = module.logic_app_integration_account_partners.logic_app_integration_account_partners_business_identity
@@ -241,6 +276,11 @@ output "logic_app_integration_account_partners_resource_group_name" {
 }
 
 # --- azurerm_logic_app_integration_account_schema ---
+output "logic_app_integration_account_schemas_id" {
+  description = "Map of id values across all logic_app_integration_account_schemas, keyed the same as var.logic_app_integration_account_schemas"
+  value       = module.logic_app_integration_account_schemas.logic_app_integration_account_schemas_id
+}
+
 output "logic_app_integration_account_schemas_content" {
   description = "Map of content values across all logic_app_integration_account_schemas, keyed the same as var.logic_app_integration_account_schemas"
   value       = module.logic_app_integration_account_schemas.logic_app_integration_account_schemas_content
@@ -272,6 +312,11 @@ output "logic_app_integration_account_schemas_resource_group_name" {
 }
 
 # --- azurerm_logic_app_integration_account_session ---
+output "logic_app_integration_account_sessions_id" {
+  description = "Map of id values across all logic_app_integration_account_sessions, keyed the same as var.logic_app_integration_account_sessions"
+  value       = module.logic_app_integration_account_sessions.logic_app_integration_account_sessions_id
+}
+
 output "logic_app_integration_account_sessions_content" {
   description = "Map of content values across all logic_app_integration_account_sessions, keyed the same as var.logic_app_integration_account_sessions"
   value       = module.logic_app_integration_account_sessions.logic_app_integration_account_sessions_content
