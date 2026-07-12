@@ -5,7 +5,7 @@ locals {
     for k1, v1 in var.logic_app_integration_accounts : {
       for k2, v2 in coalesce(v1.logic_app_integration_account_agreements, {}) :
       "${k1}/${k2}" => merge(v2, {
-        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts["${k1}"].name
+        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts_name["${k1}"]
       })
     }
   ]...)
@@ -14,7 +14,7 @@ locals {
     for k1, v1 in var.logic_app_integration_accounts : {
       for k2, v2 in coalesce(v1.logic_app_integration_account_assemblies, {}) :
       "${k1}/${k2}" => merge(v2, {
-        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts["${k1}"].name
+        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts_name["${k1}"]
       })
     }
   ]...)
@@ -23,7 +23,7 @@ locals {
     for k1, v1 in var.logic_app_integration_accounts : {
       for k2, v2 in coalesce(v1.logic_app_integration_account_batch_configurations, {}) :
       "${k1}/${k2}" => merge(v2, {
-        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts["${k1}"].name
+        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts_name["${k1}"]
       })
     }
   ]...)
@@ -32,7 +32,7 @@ locals {
     for k1, v1 in var.logic_app_integration_accounts : {
       for k2, v2 in coalesce(v1.logic_app_integration_account_certificates, {}) :
       "${k1}/${k2}" => merge(v2, {
-        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts["${k1}"].name
+        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts_name["${k1}"]
       })
     }
   ]...)
@@ -41,7 +41,7 @@ locals {
     for k1, v1 in var.logic_app_integration_accounts : {
       for k2, v2 in coalesce(v1.logic_app_integration_account_maps, {}) :
       "${k1}/${k2}" => merge(v2, {
-        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts["${k1}"].name
+        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts_name["${k1}"]
       })
     }
   ]...)
@@ -50,7 +50,7 @@ locals {
     for k1, v1 in var.logic_app_integration_accounts : {
       for k2, v2 in coalesce(v1.logic_app_integration_account_partners, {}) :
       "${k1}/${k2}" => merge(v2, {
-        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts["${k1}"].name
+        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts_name["${k1}"]
       })
     }
   ]...)
@@ -59,7 +59,7 @@ locals {
     for k1, v1 in var.logic_app_integration_accounts : {
       for k2, v2 in coalesce(v1.logic_app_integration_account_schemas, {}) :
       "${k1}/${k2}" => merge(v2, {
-        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts["${k1}"].name
+        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts_name["${k1}"]
       })
     }
   ]...)
@@ -68,7 +68,7 @@ locals {
     for k1, v1 in var.logic_app_integration_accounts : {
       for k2, v2 in coalesce(v1.logic_app_integration_account_sessions, {}) :
       "${k1}/${k2}" => merge(v2, {
-        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts["${k1}"].name
+        integration_account_name = module.logic_app_integration_accounts.logic_app_integration_accounts_name["${k1}"]
       })
     }
   ]...)
