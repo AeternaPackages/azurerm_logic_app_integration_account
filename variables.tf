@@ -126,10 +126,10 @@ EOT
             hours      = optional(set(number))
             minutes    = optional(set(number))
             month_days = optional(set(number))
-            monthly = optional(object({
+            monthly = optional(list(object({
               week    = number
               weekday = string
-            }))
+            })))
             week_days = optional(set(string))
           }))
           start_time = optional(string)
@@ -159,10 +159,10 @@ EOT
       name                = string
       resource_group_name = string
       metadata            = optional(string)
-      business_identity = object({
+      business_identity = list(object({
         qualifier = string
         value     = string
-      })
+      }))
     })))
     logic_app_integration_account_schemas = optional(map(object({
       content             = string
