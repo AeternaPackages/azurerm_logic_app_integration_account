@@ -105,7 +105,7 @@ EOT
       assembly_name       = string
       name                = string
       resource_group_name = string
-      assembly_version    = optional(string) # Default: "0.0.0.0"
+      assembly_version    = optional(string)
       content             = optional(string)
       content_link_uri    = optional(string)
       metadata            = optional(map(string))
