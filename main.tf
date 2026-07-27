@@ -75,54 +75,54 @@ locals {
 }
 
 module "logic_app_integration_accounts" {
-  source                         = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account.git?ref=v4.80.0"
+  source                         = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account.git?ref=v4.81.0"
   logic_app_integration_accounts = local.logic_app_integration_accounts
 }
 
 module "logic_app_integration_account_agreements" {
-  source                                   = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_agreement.git?ref=v4.80.0"
+  source                                   = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_agreement.git?ref=v4.81.0"
   logic_app_integration_account_agreements = local.logic_app_integration_account_agreements
   depends_on                               = [module.logic_app_integration_accounts]
 }
 
 module "logic_app_integration_account_assemblies" {
-  source                                   = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_assembly.git?ref=v4.80.0"
+  source                                   = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_assembly.git?ref=v4.81.0"
   logic_app_integration_account_assemblies = local.logic_app_integration_account_assemblies
   depends_on                               = [module.logic_app_integration_accounts]
 }
 
 module "logic_app_integration_account_batch_configurations" {
-  source                                             = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_batch_configuration.git?ref=v4.80.0"
+  source                                             = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_batch_configuration.git?ref=v4.81.0"
   logic_app_integration_account_batch_configurations = local.logic_app_integration_account_batch_configurations
   depends_on                                         = [module.logic_app_integration_accounts]
 }
 
 module "logic_app_integration_account_certificates" {
-  source                                     = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_certificate.git?ref=v4.80.0"
+  source                                     = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_certificate.git?ref=v4.81.0"
   logic_app_integration_account_certificates = local.logic_app_integration_account_certificates
   depends_on                                 = [module.logic_app_integration_accounts]
 }
 
 module "logic_app_integration_account_maps" {
-  source                             = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_map.git?ref=v4.80.0"
+  source                             = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_map.git?ref=v4.81.0"
   logic_app_integration_account_maps = local.logic_app_integration_account_maps
   depends_on                         = [module.logic_app_integration_accounts]
 }
 
 module "logic_app_integration_account_partners" {
-  source                                 = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_partner.git?ref=v4.80.0"
+  source                                 = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_partner.git?ref=v4.81.0"
   logic_app_integration_account_partners = local.logic_app_integration_account_partners
   depends_on                             = [module.logic_app_integration_accounts]
 }
 
 module "logic_app_integration_account_schemas" {
-  source                                = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_schema.git?ref=v4.80.0"
+  source                                = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_schema.git?ref=v4.81.0"
   logic_app_integration_account_schemas = local.logic_app_integration_account_schemas
   depends_on                            = [module.logic_app_integration_accounts]
 }
 
 module "logic_app_integration_account_sessions" {
-  source                                 = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_session.git?ref=v4.80.0"
+  source                                 = "git::https://github.com/AeternaModules/azurerm_logic_app_integration_account_session.git?ref=v4.81.0"
   logic_app_integration_account_sessions = local.logic_app_integration_account_sessions
   depends_on                             = [module.logic_app_integration_accounts]
 }
